@@ -11,29 +11,137 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 100px auto;
+    margin: 10% auto;
     max-width: 450px;
 }
 
 .illustration {
     border-radius: 20px 20px 0 0;
+    width: 100%;
+    margin: auto;
 }
 
-.text {
+.text-container {
     background: white;
     font-family: 'Red Hat Display', sans-serif;
-    height: auto;
     border-radius: 0 0 20px 20px;
     color: hsl(223, 47%, 23%);
+    width: 100%;
+    margin: 0 auto;
 }
 
-.text h1 {
-    font-size: 1.5em;
+h1 {
+    font-size: 1.8em;
     font-weight: 700;
     text-align: center;
     margin: 50px 0 25px 0;
 }
 
-.text p {
+.text-1 {
+    font-size: 1em;
+    max-width: 350px;
+    margin: 0 auto;
     text-align: center;
+    line-height: 1.6em;
+    color: hsl(224, 23%, 55%);
 }
+
+.annual-plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    margin: 5% 11%;
+    padding: 23px 20px;
+    border-radius: 10px;
+}
+
+.annual-text {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100px;
+    line-height: 1.7em;
+    margin: 0 50px 0 0;
+}
+
+.annual-text p {
+    color: hsl(224, 23%, 55%);
+    letter-spacing: .04em;
+}
+
+.annual-text span {
+    font-weight: 800;
+    color: hsl(223, 47%, 23%);
+    letter-spacing: normal;
+}
+
+.change-button {
+    text-decoration: underline;
+    font-size: .9em;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+}
+
+.change-button:hover {
+    cursor: pointer;
+    color: hsl(245, 58%, 66%);
+    text-decoration: none;
+}
+
+.payment-button {
+    display: flex;
+    width: 78%;
+    padding: 14px;
+    margin: 30px auto 25px auto;
+    border-radius: 12px;
+    border: none;
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 0px 10px 30px 5px hsla(245, 75%, 52%, 0.233);
+}
+
+.payment-button:hover {
+    cursor: pointer;
+    background-color: hsl(245, 58%, 66%);
+
+}
+
+.payment-button p {
+    color: white;
+    margin: auto;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.1em;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+}
+
+.cancel-button {
+    display: flex;
+    justify-content: center;
+    margin: 45px auto; 
+}
+
+.cancel-button p {
+    color: hsl(224, 23%, 55%);
+    font-size: 0.9em;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+}
+
+.cancel-button p:hover {
+    cursor: pointer;
+    color: hsl(223, 47%, 23%);
+}
+
+/* mobile */
+
+@media(max-width: 768px) {
+    .annual-plan {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .annual-text {
+        margin: auto;
+    }
+}
+	
