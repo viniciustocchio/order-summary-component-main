@@ -8,4 +8,4 @@ This is a challange from the site Frontend Mentor, and the proposal is to compos
 
 In this exercise, I could practice a little bit more HTML, CSS, flexbox and it was good training to creating responsive layouts (desktop and mobile).
 
-![Design preview for the Order summary card coding challenge](./design/final-layout.png)
+![Design preview for the Order summary card coding challenge](./images/final-layout.png)
